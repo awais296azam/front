@@ -66,12 +66,155 @@
 // }
 // dark.addEventListener("click",change);
 
-class parents {
-    show(){
-        console.log("This is parent area");
-    }
-}
-class child extends parents{
+// class parents {
+//     show(){
+//         console.log("This is parent area");
+//     }
+// }
+// class child extends parents{
 
+// }
+// let awais = new child();
+
+// class company{
+//     constructor(color){
+//     this.color=color; 
+//     }
+//     brand="samsung";
+//     location="pakistan";
+//     show(){
+//         console.log(`Made in ${this.location} by ${this.brand} mobile color is ${this.color}`);
+//     }
+// }
+// class A72 extends company{
+//     constructor(color){
+//         super(color);
+//     }
+//         model(){
+//             console.log("This is A72 Model");
+//         }
+//     }
+
+// let ph1=new A72("black");
+
+// let studNeme="Awais Azma";
+// let age=24;
+// let Totalmarks=1100;
+// let obtainMarks=960;
+// console.log("StudName:",studNeme);
+// console.log("Age:",age);
+// try{
+// console.log("TotalMarks:",Toamarks);
+// } catch(err){
+//   console.log|(err);
+// }
+
+// console.log("ObtainMarks:",obtainMarks);
+// let per=obtainMarks/Totalmarks*100;
+// console.log( "Persantage is:",per,"%");
+
+// function hello(name,callback){
+//     console.log("Welcome " +name+ " ! ");
+//     callback();
+// }
+// function bye(){
+//     console.log("Have a nice day...!");
+// }
+// hello("Awais",bye);
+
+// function getresult(rollno, nextstep){
+//     setTimeout(()=>{
+//        console.log("Result of",rollno)
+//        if (nextstep){
+//         nextstep();
+//        }
+
+//     },2000)
+
+// }
+// getresult(1234,()=>{
+//     console.log("Valid Username.......")
+//     getresult(1221,()=>{
+//          console.log("Valid Password.......")
+//         getresult(2223,()=>{
+//              console.log("Sucesfull Login.......")
+//             getresult(12333)
+//             console.log("Show Data.......")
+//         })
+//     })
+// });
+
+
+// let promise=new Promise((resolve,reject)=>{
+//     console.log("This is an example of an promise");
+
+// })
+// console.log(promise);
+
+
+
+// function getresult(rollNo) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log("result of student: " + rollNo);
+//             resolve("Data found succesfully: " + rollNo);
+//         }, 2000)
+//     })
+// }
+// async function result(){
+//     console.log("Getting Result 1......")
+// await getresult(1);
+//  console.log("Getting Result 2......")
+// await getresult(2);
+//  console.log("Getting Result 3......")
+// await getresult(3);
+// }
+// result();
+
+
+
+
+// getresult(1).then((res) => {
+//     console.log("Result Found :", res);
+//     getresult(2).then((res) => {
+//         console.log("Result Found :", res);
+//         getresult(3).then((res) => {
+//             console.log("Result Found :", res);
+//         })
+//     })
+// })
+
+// getresult(1)
+// .then((res)=>{
+//     console.log("Result Found :",res);
+//     return getresult(2);
+// }).then((res)=>{
+//     console.log("Result Found :",res);
+//     return getresult(3);
+// }).then((res)=>{
+//     console.log("Result Found :",res);
+// })
+
+// async function myfunction(){
+//     console.log("Java Script ");
+// }
+// myfunction(); 
+
+
+
+ function getresult(rollNo) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("result of student: " + rollNo);
+            resolve("Data found succesfully: " + rollNo);
+        }, 2000)
+    })
 }
-let awais = new child();
+(async function result(){
+    console.log("Getting Result 1......")
+await getresult(1);
+ console.log("Getting Result 2......")
+await getresult(2);
+ console.log("Getting Result 3......")
+await getresult(3);
+})();
